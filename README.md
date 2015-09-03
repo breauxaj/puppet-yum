@@ -11,6 +11,11 @@ Samples
 ```
 include yum
 ```
+```
+yum::config {
+  "exclude":  value => 'kernel*';
+}
+```
 
 License
 -------
