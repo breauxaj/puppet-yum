@@ -2,7 +2,10 @@ class yum (
   $ensure = 'latest',
 ) {
   $required = $::operatingsystem ? {
-    /(?i-mx:centos|fedora|redhat|scientific)/ => [ 'yum' ],
+    /(?i-mx:centos|fedora|redhat|scientific)/ => [
+      'yum',
+      'yum-plugin-fastestmirror'
+    ],
   }
 
   package { $required: ensure => $ensure }
