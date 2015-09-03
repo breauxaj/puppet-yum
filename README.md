@@ -13,7 +13,7 @@ include yum
 ```
 ```
 yum::config {
-  "exclude":  value => 'kernel*';
+  "exclude": value => 'kernel*';
 }
 ```
 
