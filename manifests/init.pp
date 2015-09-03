@@ -4,7 +4,8 @@ class yum (
   $required = $::operatingsystem ? {
     /(?i-mx:centos|fedora|redhat|scientific)/ => [
       'yum',
-      'yum-plugin-fastestmirror'
+      'yum-plugin-fastestmirror',
+      'yum-utils'
     ],
   }
 
